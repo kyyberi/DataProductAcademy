@@ -1,34 +1,48 @@
-
+<!-- courses.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Courses - Data Product Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Data Product Academy</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="youtube.html">YouTube</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Courses</h2>
-        <div class="courses">
-            <div class="course">Data Product Monetization Masterclass</div>
-            <div class="course">Introduction to Data Product Mindset</div>
-            <div class="course">AI-Powered Data Products</div>
+    <!-- Global Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Data Product Academy</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="youtube.html">YouTube</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu">&#9776;</div>
         </div>
-    </main>
+    </nav>
 
-    <footer>
-        <p>Contact us on LinkedIn or WhatsApp: +971509718065</p>
-    </footer>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Our Courses</h1>
+        <p>Explore our curated selection of courses designed to elevate your data product knowledge.</p>
+    </section>
+    <div class="courses-container" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="course-card">
+            <h3>Data Product Monetization Masterclass</h3>
+            <div class="image-placeholder"></div>
+            <p>Understand how to turn data products into profitable assets.</p>
+        </div>
+        <div class="course-card">
+            <h3>Data Product Governance</h3>
+            <div class="image-placeholder"></div>
+            <p>Master governance frameworks and compliance.</p>
+        </div>
+        <div class="course-card">
+            <h3>AI-Powered Data Products</h3>
+            <div class="image-placeholder"></div>
+            <p>Innovate with AI-driven approaches to data products.</p>
+        </div>
+    </div>
 </body>
 </html>
-    

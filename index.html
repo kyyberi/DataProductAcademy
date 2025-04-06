@@ -1,33 +1,86 @@
-
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Product Academy</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
-    <header class="header">
-        <h1>Data Product Academy</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="youtube.html">YouTube</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <!-- Global Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Data Product Academy</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="youtube.html">YouTube</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu">&#9776;</div>
+        </div>
+    </nav>
 
-    <main>
-        <section id="landing">
-            <h2>Master the Data Economy</h2>
-            <p>Explore premium courses, tutorials, and resources to boost your skills.</p>
-            <button>Get Started</button>
-        </section>
-    </main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to the Data Product Academy</h1>
+        <p>Learn the art of creating successful data products from one of the leading experts in the field.</p>
+        <button class="cta">Get Started</button>
+    </section>
 
-    <footer>
-        <p>Contact us on LinkedIn or WhatsApp: +971509718065</p>
+    <!-- Featured Courses Section -->
+    <section class="featured-courses">
+        <h2>Featured Courses</h2>
+        <p>All courses include 1-on-1 LIVE Q&A sessions with the experts.</p>
+        <div class="courses-container" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="course-card">
+                <h3>Data Product Monetization Masterclass</h3>
+                <div class="image-placeholder"></div>
+                <p>Understand how to turn data products into profitable assets.</p>
+            </div>
+            <div class="course-card">
+                <h3>Data Product Governance</h3>
+                <div class="image-placeholder"></div>
+                <p>Master governance frameworks and compliance.</p>
+            </div>
+            <div class="course-card">
+                <h3>AI-Powered Data Products</h3>
+                <div class="image-placeholder"></div>
+                <p>Innovate with AI-driven approaches to data products.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected YouTube Videos Section -->
+    <section class="featured-youtube">
+        <h2>Selected YouTube Videos</h2>
+        <div class="courses-container" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="course-card">
+                <h3>Introduction to Data Product Mindset</h3>
+                <div class="image-placeholder"></div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="course-card">
+                <h3>Data Product Governance Explained</h3>
+                <div class="image-placeholder"></div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="course-card">
+                <h3>AI-Powered Data Products Overview</h3>
+                <div class="image-placeholder"></div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Data Product Academy | <a href="index.html">Home</a> | <a href="courses.html">Courses</a> | <a href="youtube.html">YouTube</a> | <a href="contact.html">Contact</a></p>
+        </div>
     </footer>
+
 </body>
 </html>
-    

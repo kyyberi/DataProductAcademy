@@ -2,29 +2,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blog - Data Product Academy</title>
+    <title>Data Product Academy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <h1>Data Product Academy</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="youtube.html">YouTube</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="navbar">
+            <h1>Data Product Academy</h1>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="youtube.html">YouTube</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h2>Blog</h2>
-        <p>Read the latest articles and insights about the Data Economy.</p>
+        <div class="hero">
+            <h1>Welcome to Data Product Academy</h1>
+            <p>Master the Data Economy with our premium courses and resources.</p>
+            <button>Get Started</button>
+        </div>
+
+        <div class="featured-courses">
+            <h2>Featured Courses</h2>
+            <div class="courses">
+                <div class="course">Data Product Monetization Masterclass</div>
+                <div class="course">Introduction to Data Product Mindset</div>
+                <div class="course">AI-Powered Data Products</div>
+            </div>
+        </div>
+
+        <div class="youtube-videos">
+            <h2>Latest YouTube Videos</h2>
+            <div class="courses">
+                <div class="course">Understanding Data Product Economy</div>
+                <div class="course">Building Scalable Data Products</div>
+                <div class="course">AI-Powered Data Governance</div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>Contact us on LinkedIn or WhatsApp: +971509718065</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
 </html>
-    
