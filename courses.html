@@ -6,6 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .hamburger-menu {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 15px;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #727272;
+                padding: 10px;
+                border-radius: 5px;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Global Navigation Bar -->
@@ -23,7 +60,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero-small">
         <h1>Our Courses</h1>
         <p>Explore our curated selection of courses designed to elevate your data product knowledge.</p>
     </section>
@@ -32,18 +69,18 @@
     <section class="courses-listing">
         <div class="courses-container" style="grid-template-columns: repeat(3, 1fr);">
             <div class="course-card">
+                <img src="monetization.jpg" alt="Monetization Course">
                 <h3><a href="monetization.html">Data Product Monetization Masterclass</a></h3>
-                <div class="image-placeholder"></div>
                 <p>Understand how to turn data products into profitable assets.</p>
             </div>
             <div class="course-card">
+                <img src="governance.jpg" alt="Governance Course">
                 <h3><a href="governance.html">Data Product Governance</a></h3>
-                <div class="image-placeholder"></div>
                 <p>Master governance frameworks and compliance.</p>
             </div>
             <div class="course-card">
+                <img src="ai-powered.jpg" alt="AI-Powered Course">
                 <h3><a href="ai-powered.html">AI-Powered Data Products</a></h3>
-                <div class="image-placeholder"></div>
                 <p>Innovate with AI-driven approaches to data products.</p>
             </div>
         </div>
@@ -55,5 +92,22 @@
             <p>&copy; 2025 Data Product Academy | <a href="index.html">Home</a> | <a href="courses.html">Courses</a> | <a href="youtube.html">YouTube</a> | <a href="contact.html">Contact</a></p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menu = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+    
+            menu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+    
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>

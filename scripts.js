@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.hamburger-menu');
-    const links = document.querySelector('.nav-links');
-    
+    const navLinks = document.querySelector('.nav-links');
+
     menu.addEventListener('click', () => {
-        links.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
     });
 });

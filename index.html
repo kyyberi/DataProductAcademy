@@ -6,7 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Product Academy</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="scripts.js"></script>
+    <style>
+        .hamburger-menu {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 15px;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #727272;
+                padding: 10px;
+                border-radius: 5px;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Global Navigation Bar -->
@@ -32,22 +68,21 @@
 
     <!-- Featured Courses Section -->
     <section class="featured-courses">
-        <h2>Featured Courses</h2>
-        <p>All courses include 1-on-1 LIVE Q&A sessions with the experts.</p>
-        <div class="courses-container" style="grid-template-columns: repeat(3, 1fr);">
+        <h2>Featured Udemy Courses</h2>
+        <div class="courses-container">
             <div class="course-card">
+                <img src="monetization.jpg" alt="Monetization Course">
                 <h3><a href="monetization.html">Data Product Monetization Masterclass</a></h3>
-                <div class="image-placeholder"></div>
                 <p>Understand how to turn data products into profitable assets.</p>
             </div>
             <div class="course-card">
+                <img src="governance.jpg" alt="Governance Course">
                 <h3><a href="governance.html">Data Product Governance</a></h3>
-                <div class="image-placeholder"></div>
                 <p>Master governance frameworks and compliance.</p>
             </div>
             <div class="course-card">
+                <img src="ai-powered.jpg" alt="AI-Powered Course">
                 <h3><a href="ai-powered.html">AI-Powered Data Products</a></h3>
-                <div class="image-placeholder"></div>
                 <p>Innovate with AI-driven approaches to data products.</p>
             </div>
         </div>
@@ -59,15 +94,22 @@
         <div class="courses-container" style="grid-template-columns: repeat(3, 1fr);">
             <div class="course-card">
                 <h3>Introduction to Data Product Mindset</h3>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/KQLKUXoFWzk?si=WKI-YunVHOvpPE5C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             <div class="course-card">
                 <h3>Data Product Governance Explained</h3>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Tn4Vv8qYei0?si=XK2GgqHUAHCqbApe" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="course-card">
                 <h3>AI-Powered Data Products Overview</h3>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/KQLKUXoFWzk?si=WKI-YunVHOvpPE5C" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="course-card">
+                <h3>Data Product Governance Explained</h3>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Tn4Vv8qYei0?si=XK2GgqHUAHCqbApe" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="course-card">
+                <h3>AI-Powered Data Products Overview</h3>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/KQLKUXoFWzk?si=WKI-YunVHOvpPE5C" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
