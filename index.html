@@ -1,140 +1,27 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Product Academy</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .hamburger-menu {
-            display: none;
-            font-size: 30px;
-            cursor: pointer;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data-product-academy-online</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
 
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
+    <meta property="og:title" content="data-product-academy-online" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                display: block;
-                position: absolute;
-                right: 20px;
-                top: 15px;
-            }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <script type="module" crossorigin src="/assets/index-DXJZv1Ne.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BssKev1n.css">
+  </head>
 
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                background-color: #727272;
-                padding: 10px;
-                border-radius: 5px;
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Global Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">Data Product Academy</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="youtube.html">YouTube</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger-menu">&#9776;</div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to the Data Product Academy</h1>
-        <p>Learn the art of creating successful data products from one of the leading experts in the field.</p>
-        <button class="cta">Get Started</button>
-    </section>
-
-    <!-- Featured Courses Section -->
-    <section class="featured-courses">
-        <h2>Featured Udemy Courses</h2>
-        <div class="courses-container">
-            <div class="course-card">
-                <img src="monetization.jpg" alt="Monetization Course">
-                <h3><a href="monetization.html">Data Product Monetization Masterclass</a></h3>
-                <p>Understand how to turn data products into profitable assets.</p>
-            </div>
-            <div class="course-card">
-                <img src="governance.jpg" alt="Governance Course">
-                <h3><a href="governance.html">Data Product Governance</a></h3>
-                <p>Master governance frameworks and compliance.</p>
-            </div>
-            <div class="course-card">
-                <img src="ai-powered.jpg" alt="AI-Powered Course">
-                <h3><a href="ai-powered.html">AI-Powered Data Products</a></h3>
-                <p>Innovate with AI-driven approaches to data products.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Selected YouTube Videos Section -->
-    <section class="featured-youtube">
-        <h2>Selected YouTube Videos</h2>
-        <div class="courses-container" style="grid-template-columns: repeat(3, 1fr);">
-            <div class="course-card">
-                <h3>Introduction to Data Product Mindset</h3>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/KQLKUXoFWzk?si=WKI-YunVHOvpPE5C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <div class="course-card">
-                <h3>Data Product Governance Explained</h3>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Tn4Vv8qYei0?si=XK2GgqHUAHCqbApe" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="course-card">
-                <h3>AI-Powered Data Products Overview</h3>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/KQLKUXoFWzk?si=WKI-YunVHOvpPE5C" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="course-card">
-                <h3>Data Product Governance Explained</h3>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Tn4Vv8qYei0?si=XK2GgqHUAHCqbApe" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="course-card">
-                <h3>AI-Powered Data Products Overview</h3>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/KQLKUXoFWzk?si=WKI-YunVHOvpPE5C" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2025 Data Product Academy | <a href="index.html">Home</a> | <a href="courses.html">Courses</a> | <a href="youtube.html">YouTube</a> | <a href="contact.html">Contact</a></p>
-        </div>
-    </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menu = document.querySelector('.hamburger-menu');
-            const navLinks = document.querySelector('.nav-links');
-
-            menu.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                });
-            });
-        });
-    </script>
-</body>
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
 </html>
